@@ -27,4 +27,5 @@ dependencies {
     implementation rootProject.ext.dependencies["constraint-layout"]
     implementation rootProject.ext.dependencies["design"]
     implementation project(':BaseLibrary')
+    implementation project(':CommonRes')
 }

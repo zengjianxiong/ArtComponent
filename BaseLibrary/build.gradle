@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.alibaba.arouter'
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
@@ -16,6 +16,12 @@ android {
         versionName rootProject.ext.android["versionName"]
 
         testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
 
     buildTypes {
@@ -56,14 +62,16 @@ dependencies {
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]
 
     //tools
+    api rootProject.ext.dependencies["arouter"]
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
     api rootProject.ext.dependencies["gson"]
     api rootProject.ext.dependencies["butterknife"]
-    annotationProcessor  rootProject.ext.dependencies["butterknife-compiler"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
 
     api rootProject.ext.dependencies["dagger2"]
+    api rootProject.ext.dependencies["dagger2-android-support"]
     annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
     annotationProcessor rootProject.ext.dependencies["dagger2-android-processor"]
-    api rootProject.ext.dependencies["dagger2-android-support"]
 
 
 

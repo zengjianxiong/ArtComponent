@@ -1,4 +1,4 @@
-package com.zeng.art.baselibrary.di;
+package com.zeng.art.di;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

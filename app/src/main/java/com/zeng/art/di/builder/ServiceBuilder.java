@@ -1,4 +1,4 @@
-package com.zeng.art.baselibrary.di.builder;
+package com.zeng.art.di.builder;
 
 import dagger.Module;
 

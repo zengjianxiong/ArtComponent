@@ -1,4 +1,4 @@
-package com.zeng.art.baselibrary.di.module;
+package com.zeng.art.di.module;
 
 
 import com.zeng.art.baselibrary.BuildConfig;

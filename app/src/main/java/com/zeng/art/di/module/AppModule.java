@@ -1,11 +1,10 @@
-package com.zeng.art.baselibrary.di.module;
+package com.zeng.art.di.module;
 
 import android.app.Application;
 import android.content.Context;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.zeng.art.baselibrary.BuildConfig;
 import com.zeng.art.baselibrary.data.AppDataManager;
 import com.zeng.art.baselibrary.data.DataManager;
 import com.zeng.art.baselibrary.data.local.db.AppDbHelper;
@@ -14,12 +13,12 @@ import com.zeng.art.baselibrary.data.local.prefs.AppPreferencesHelper;
 import com.zeng.art.baselibrary.data.local.prefs.PreferencesHelper;
 import com.zeng.art.baselibrary.data.remote.ApiHelper;
 import com.zeng.art.baselibrary.data.remote.AppApiHelper;
-import com.zeng.art.baselibrary.di.ApiInfo;
-import com.zeng.art.baselibrary.di.DatabaseInfo;
-import com.zeng.art.baselibrary.di.PreferenceInfo;
 import com.zeng.art.baselibrary.utils.AppConstants;
 import com.zeng.art.baselibrary.utils.rx.AppSchedulerProvider;
 import com.zeng.art.baselibrary.utils.rx.SchedulerProvider;
+import com.zeng.art.di.ApiInfo;
+import com.zeng.art.di.DatabaseInfo;
+import com.zeng.art.di.PreferenceInfo;
 
 import javax.inject.Singleton;
 
