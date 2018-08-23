@@ -1,13 +1,11 @@
-package com.zeng.art.di.component;
+package com.zeng.art.di.dagger;
 
 import android.app.Application;
 
 import com.zeng.art.baselibrary.ArtApp;
+import com.zeng.art.baselibrary.di.module.AppModule;
+import com.zeng.art.baselibrary.di.module.NetworkModule;
 
-import com.zeng.art.di.builder.ActivityBuilder;
-import com.zeng.art.di.builder.ServiceBuilder;
-import com.zeng.art.di.module.AppModule;
-import com.zeng.art.di.module.NetworkModule;
 
 import javax.inject.Singleton;
 
@@ -16,16 +14,18 @@ import dagger.Component;
 import dagger.android.AndroidInjectionModule;
 import dagger.android.support.AndroidSupportInjectionModule;
 
+
 @Singleton
 @Component(modules = {
-        AndroidInjectionModule.class,
         AppModule.class,
         NetworkModule.class,
-        ActivityBuilder.class,
-        ServiceBuilder.class})
-public interface AppComponent {
+        AndroidInjectionModule.class,
+        AndroidSupportInjectionModule.class,
+        AModuleAllActivityModule.class
+})
+public interface AModuleComponent {
 
-    void inject(ArtApp app);
+    void inject(ArtApp application);
 
     @Component.Builder
     interface Builder {
@@ -33,6 +33,7 @@ public interface AppComponent {
         @BindsInstance
         Builder application(Application application);
 
-        AppComponent build();
+        AModuleComponent build();
     }
+
 }

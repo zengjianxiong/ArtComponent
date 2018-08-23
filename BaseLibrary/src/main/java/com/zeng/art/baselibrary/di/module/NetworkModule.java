@@ -1,5 +1,4 @@
-package com.zeng.art.di.module;
-
+package com.zeng.art.baselibrary.di.module;
 
 import com.zeng.art.baselibrary.BuildConfig;
 import com.zeng.art.baselibrary.data.remote.ApiService;
@@ -16,7 +15,6 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-
 
 /**
  * @author 曾建雄

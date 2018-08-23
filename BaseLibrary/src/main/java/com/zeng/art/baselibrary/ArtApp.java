@@ -8,7 +8,6 @@ import com.alibaba.android.arouter.launcher.ARouter;
 
 
 
-
 import net.grandcentrix.thirtyinch.TiLog;
 
 import javax.inject.Inject;
@@ -38,7 +37,7 @@ public abstract class ArtApp extends Application implements HasActivityInjector,
     }
 
     private void initLog() {
-        if(BuildConfig.DEBUG){
+        if (BuildConfig.DEBUG) {
             TiLog.setLogger(TiLog.LOGCAT);
         }
     }

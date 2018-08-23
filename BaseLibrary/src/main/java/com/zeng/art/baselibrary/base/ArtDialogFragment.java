@@ -13,7 +13,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import dagger.android.support.AndroidSupportInjection;
 
-public abstract class ArtDialogFragment extends TiDialogFragment {
+public abstract class ArtDialogFragment<P extends ArtPresenter<V>, V extends ArtView> extends TiDialogFragment<P, V> {
     private Unbinder mUnBinder;
     public View mRootView;
 

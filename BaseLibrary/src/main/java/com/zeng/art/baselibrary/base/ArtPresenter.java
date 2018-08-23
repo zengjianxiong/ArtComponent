@@ -14,11 +14,14 @@ import javax.inject.Inject;
  */
 public abstract class ArtPresenter<V extends ArtView> extends TiPresenter<V> {
 
-    private final DataManager mDataManager;
-    private final SchedulerProvider mSchedulerProvider;
+    private  DataManager mDataManager;
+    private  SchedulerProvider mSchedulerProvider;
 
     private RxTiPresenterDisposableHandler presenterDisposableHandler;
 
+    public ArtPresenter(){
+
+    }
     public ArtPresenter(DataManager dataManager, SchedulerProvider schedulerProvider) {
         this.mDataManager = dataManager;
         this.mSchedulerProvider = schedulerProvider;

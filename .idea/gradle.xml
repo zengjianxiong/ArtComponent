@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/BaseLibrary" />
             <option value="$PROJECT_DIR$/CommonRes" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/module-gank" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -13,7 +13,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import dagger.android.support.AndroidSupportInjection;
 
-public abstract class ArtFragment extends TiFragment {
+public abstract class ArtFragment<P extends ArtPresenter<V>, V extends ArtView> extends TiFragment<P,V> {
     private Unbinder mUnBinder;
     public View mRootView;
 
