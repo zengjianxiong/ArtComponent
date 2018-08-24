@@ -1,15 +1,12 @@
 package com.zeng.art;
 
 import android.os.Bundle;
-
 import android.support.design.widget.FloatingActionButton;
-
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
-
 import com.zeng.art.baselibrary.base.simple.SimpleActivity;
 import com.zeng.art.baselibrary.core.RouterHub;
 

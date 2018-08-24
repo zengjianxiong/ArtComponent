@@ -6,11 +6,11 @@
 
         android:allowBackup="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Public_AppTheme">
         <activity
             android:name=".GankActivity"
             android:label="@string/title_activity_gank"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/Public_AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

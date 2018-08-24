@@ -6,7 +6,7 @@
         <activity
             android:name=".GankActivity"
             android:label="@string/title_activity_gank"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/Public_AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

@@ -14,18 +14,14 @@ import javax.inject.Inject;
  */
 public abstract class ArtPresenter<V extends ArtView> extends TiPresenter<V> {
 
-    private  DataManager mDataManager;
-    private  SchedulerProvider mSchedulerProvider;
+    private final DataManager mDataManager;
+    private final SchedulerProvider mSchedulerProvider;
+    private final RxTiPresenterDisposableHandler mDisposableHandler;
 
-    private RxTiPresenterDisposableHandler presenterDisposableHandler;
-
-    public ArtPresenter(){
-
-    }
     public ArtPresenter(DataManager dataManager, SchedulerProvider schedulerProvider) {
         this.mDataManager = dataManager;
         this.mSchedulerProvider = schedulerProvider;
-        presenterDisposableHandler = new RxTiPresenterDisposableHandler(this);
+        mDisposableHandler = new RxTiPresenterDisposableHandler(this);
     }
 
     public DataManager getDataManager() {
@@ -34,5 +30,9 @@ public abstract class ArtPresenter<V extends ArtView> extends TiPresenter<V> {
 
     public SchedulerProvider getSchedulerProvider() {
         return mSchedulerProvider;
+    }
+
+    public RxTiPresenterDisposableHandler getDisposableHandler() {
+        return mDisposableHandler;
     }
 }
