@@ -29,13 +29,15 @@ public abstract class ArtDialogFragment<P extends ArtPresenter<V>, V extends Art
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        mRootView = inflater.inflate(getLayoutId(), container, false);
-        return mRootView;
+        return inflater.inflate(getLayoutId(), container, false);
 
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        if (mRootView == null) {
+            mRootView = view;
+        }
         setUnBinder(ButterKnife.bind(this, view));
         setUp();
         super.onViewCreated(view, savedInstanceState);
