@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zeng.art.thirdparty">
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 外部存储读权限，调试工具加载本地补丁需要
+    READ_EXTERNAL_STORAGE权限属于Dangerous Permissions，
+    仅调试工具获取外部补丁需要，不影响线上发布的补丁加载，
+    调试时请自行做好android6.0以上的运行时权限获取。-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <!--将上述value中的值分别改为通过平台HotFix服务申请得到的App Secret和RSA密钥，出于安全考虑，建议使用setSecretMetaData这个方法进行设置-->
+    <!--<application>-->
+        <!--<meta-data-->
+            <!--android:name="com.taobao.android.hotfix.IDSECRET"-->
+            <!--android:value="App ID" />-->
+        <!--<meta-data-->
+            <!--android:name="com.taobao.android.hotfix.APPSECRET"-->
+            <!--android:value="App Secret" />-->
+        <!--<meta-data-->
+            <!--android:name="com.taobao.android.hotfix.RSASECRET"-->
+            <!--android:value="RSA密钥" />-->
+   <!-- </application>-->
+
+</manifest>

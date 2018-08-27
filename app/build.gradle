@@ -43,6 +43,7 @@ dependencies {
     implementation rootProject.ext.dependencies["design"]
     implementation project(':BaseLibrary')
     implementation project(':CommonRes')
+    implementation project(':ThirdParty')
 
     if (!isBuildModule.toBoolean()) {
         runtimeOnly project(':module-gank')

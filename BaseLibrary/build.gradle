@@ -36,7 +36,6 @@ android {
 }
 
 dependencies {
-
     api rootProject.ext.dependencies["thirtyinch"]
     api rootProject.ext.dependencies["thirtyinch-rx2"]
     api rootProject.ext.dependencies["thirtyinch-logginginterceptor"]

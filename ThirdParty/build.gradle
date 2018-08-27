@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
 
+apply plugin: 'com.android.library'
+
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
@@ -33,6 +35,5 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    implementation rootProject.ext.dependencies['design']
-    api project(':BaseLibrary')
+    api 'com.aliyun.ams:alicloud-android-hotfix:3.2.3'
 }

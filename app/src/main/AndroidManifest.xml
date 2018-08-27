@@ -3,7 +3,7 @@
     package="com.zeng.art">
 
     <application
-        android:name=".App"
+        android:name=".SophixStubApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <!-- <activity -->
         <!-- android:name=".TestActivity" -->
         <!-- android:label="@string/title_activity_test" -->

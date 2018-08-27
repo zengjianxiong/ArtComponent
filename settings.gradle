@@ -1,1 +1,1 @@
-include ':app', ':BaseLibrary', ':CommonRes', ':module-gank'
+include ':app', ':BaseLibrary', ':CommonRes', ':module-gank', ':ThirdParty'
